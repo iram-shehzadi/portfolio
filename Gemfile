@@ -7,6 +7,8 @@ gem 'sqlite3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 
+gem 'friendly_id', '~> 5.4.0'
+
 gem 'pg', '~> 0.21'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
