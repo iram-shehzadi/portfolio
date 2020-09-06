@@ -38,3 +38,6 @@ yarn-debug.log*
 .yarn-integrity
 
 /vendor/bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
