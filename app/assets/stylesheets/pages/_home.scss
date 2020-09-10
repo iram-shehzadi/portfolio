@@ -1,7 +1,9 @@
 $dark: #424652;
 $light: #9a9da4;
-$highlight: #8bc6db;
+$highlight: #d8d8d8;
 $border: #e9e9e9;
+
+$mobile: 1024px;
 
 .col-1,
 .col-2 {
@@ -10,18 +12,38 @@ $border: #e9e9e9;
 
 .col-1 {
 	width: 45%;
-	padding: 0 5% 0 2.5%;
+	padding: 0 7.5% 0 0;
+
+	@media only screen and (max-width: $mobile) {
+		width: 100%;
+		padding: 60px 0;
+	}
 }
 
 .col-2 {
 	width: 55%;
-	padding: 0 2.5%;
+
+	@media only screen and (max-width: $mobile) {
+		width: 100%;
+	}
+}
+
+.main-content {
+	height: 88vh;
+	display: flex;
+	align-items: center;
+
+	@media only screen and (max-width: $mobile) {
+		height: initial;
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 .homepage-content {
 	h2 {
 		font-size: 1.1rem;
-		text-transform: uppercase;
+		// text-transform: uppercase;
 	}
 	h3 {
 		font-size: 1.35em;
@@ -43,12 +65,118 @@ $border: #e9e9e9;
 	p {
 		margin: 0 0 0.75em 0;
 	}
+	
+	.profile-header {
+		display: flex;
+		align-items: center;
+		justify-self: flex-start;
+		margin-bottom: 35px;
+		
+		img {
+			width: 130px;
+			height: 130px;
+			margin-right: 25px;
+		}
+	
+		h2 {
+			font-size: 36px;
+			margin: 0;
+			padding-bottom: 2px;
+		}
+	
+		h3 {
+			font-size: 22px;
+			font-weight: 500;
+			margin: 0;
+			color: #BB261A;
+		}
+
+		#text {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	.project {
+		background-color: #E6E6E6;
+		border-radius: 12px;
+		margin-bottom: 10px;
+		padding: 24px 24px 20px 24px;
+		display: flex;
+		align-content: center;
+		justify-content: space-between;
+		cursor: pointer;
+		transition: 0.5s all;
+
+		&:hover {
+			transform: scale(0.95);
+		}
+
+		h2 {
+			margin: 0;
+			font-size: 24px;
+		}
+
+		h5 {
+			margin: 0;
+			padding-bottom: 12px;
+			font-size: 16px;
+			opacity: 0.8;
+			font-weight: 400;
+		}
+
+
+		ul {
+			display: flex;
+			flex-direction: row;
+			margin: 0;
+			padding: 0;
+			opacity: 0.4;
+
+			@media only screen and (max-width: $mobile) {
+				flex-direction: column;
+			}
+		}
+
+		li {
+			padding-right: 10px;
+			font-size: 14px;
+			list-style: none;
+			font-weight: 700;
+		}
+
+		img {
+			width: 10px;
+			float: right;
+			position: relative;
+			top: -2px;
+			margin-right: 10px;
+			opacity: 0.2	;
+		}
+
+	}
 }
+
 .about {
-	padding: 0 7.5% 0 0;
+	.links {
+		margin-top: 30px
+	}
+
 	a {
 		color: $highlight;
 		font-weight: 700;
 		text-decoration: none;
+		padding-right: 10px;
+		color: #8f8f8f;
+		&:hover {
+		  color: #BB261A;
+		}
+	}
+
+}
+
+.projects-section {
+	h2 {
+		font-size: 22px;
 	}
 }

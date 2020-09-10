@@ -5,24 +5,84 @@
 	</head>
 	<body>
 
-		<div class="wrapper wrapper-padding clearfix">
-			<div class="col-1 about homepage-content">
-				<h2>About</h2>
-				<hr>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum porro dicta architecto, atque rem earum minima voluptates in esse similique tempora eum veniam quam iure quisquam odit molestias natus neque.</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum porro dicta architecto, atque rem earum minima voluptates in &amp; esse similique tempora eum veniam quam iure quisquam odit molestias natus neque.<a href="https://github.com/iram-shehzadi"> Github</a> </p>
-				<a href="https://www.linkedin.com/in/iram-shehzadi/"> LinkedIn</a> </p>
+		<div class="main-content">
+			<div class="wrapper wrapper-padding clearfix">
+				<div class="col-1 about homepage-content">
+				<div class="profile-header">
+					<img src="../assets/profile.png">
+					<div id="text">
+						<h2>Hi, I’m Iram</h2>
+						<h3>Full Stack Ruby Developer</h3>
+					</div>
+				</div>
+				<div>
+					<p>I'm a full stack developer with a passion for Ruby on Rails and SAAS companies.
+					I previously worked as a Solutions Engineer at Buyapowa and further expanded my computer programming expertise at Le Wagon.
+					
+					 super annoying</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum porro dicta architecto, atque rem earum minima voluptates in &amp; esse similique tempora eum veniam quam iure quisquam odit molestias natus neque.</p>
+					<div class="links">
+						<a href="https://github.com/iram-shehzadi">Resume</a>
+						<a href="https://github.com/iram-shehzadi">Github</a>
+						<a href="https://www.linkedin.com/in/iram-shehzadi/">LinkedIn</a>
+						<a href="https://www.linkedin.com/in/iram-shehzadi/">Contact</a>
+					</div>
+				</div>
 			</div>
 
 
-			<div class="col-2 homepage-content">
-				<h2>Projects</h2>
+			<div class="col-2 homepage-content projects-section">
+				<h2>Things I've worked on</h2>
 				<hr>
-				<% @projects.each do |project| %>
-					<h3><a href="#"><%= link_to project.title, project %></a></h3>
-					<p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
-				<% end %>
+				<div class = "project">
+					<div>
+						<h2>Code for Change</h2>
+						<h5>Digital Collaboration App</h5>
+						<ul>
+							<li>Ruby on Rails</li>
+							<li>SCSS</li>
+							<li>HTML5</li>
+							<li>JavaScript</li>
+							<li>Heroku</li>
+							<li>Cloudinary</li>
+						</ul>
+					</div>
+					<img src="../assets/chevron.svg">
+				</div>
+
+				<div class = "project">
+					<div>
+						<h2>Polenty Bakes</h2>
+						<h5>Ecommerce Site</h5>
+						<ul>
+							<li>JavaScript</li>
+							<li>Vue.js</li>
+							<li>SCSS</li>
+							<li>HTML5</li>
+						</ul>
+					</div>
+					<img src="../assets/chevron.svg">
+				</div>
+
+				<div class = "project">
+					<div>
+						<h2>Exquisite Motors</h2>
+						<h5>Rental Service Web App</h5>
+						<ul>
+							<li>Ruby on Rails</li>
+							<li>SCSS</li>
+							<li>HTML5</li>
+							<li>JavaScript</li>
+							<li>Heroku</li>
+							<li>Cloudinary</li>
+						</ul>
+					</div>
+					<img src="../assets/chevron.svg">
+				</div>
+
 			</div>
+		</div>
+
 		</div>
 	</body>
 </html>

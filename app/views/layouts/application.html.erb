@@ -13,14 +13,17 @@
   </head>
 
   <body>
-    <header id="main-navigation" class="clearfix">
-      <%= link_to "Iram Shehzadi", root_path, class: "name" %>
-      <nav>
-        <%= link_to "Projects", projects_path %>
-        <%= link_to "About", about_path %>
-        <%= link_to "Contact", contact_path %>
-      </nav>
-    </header>
+    <%# <header id="main-navigation" class="clearfix">
+      <div class="profile-header">
+        <img src="../assets/profile.png">
+        <%= link_to "Iram Shehzadi", root_path, class: "name" %>
+      <%# </div>
+      <nav> %>
+        <%# <%= link_to "Projects", projects_path %> 
+        <%# <%= link_to "About", about_path %>
+        <%# <%= link_to "Contact", contact_path %>
+      <%# </nav>
+    </header> %>
 
     <%= yield %>
 
