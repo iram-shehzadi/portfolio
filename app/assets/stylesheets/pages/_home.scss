@@ -33,7 +33,6 @@ $mobile: 1024px;
 	display: flex;
 	align-items: center;
 
-
 	@media only screen and (max-width: $mobile) {
 		height: initial;
 		display: flex;
@@ -66,30 +65,30 @@ $mobile: 1024px;
 	p {
 		margin: 0 0 0.75em 0;
 	}
-	
+
 	.profile-header {
 		display: flex;
 		align-items: center;
 		justify-self: flex-start;
 		margin-bottom: 35px;
-		
+
 		img {
 			width: 130px;
 			height: 130px;
 			margin-right: 25px;
 		}
-	
+
 		h2 {
 			font-size: 36px;
 			margin: 0;
 			padding-bottom: 2px;
 		}
-	
+
 		h3 {
 			font-size: 22px;
 			font-weight: 500;
 			margin: 0;
-			color: #BB261A;
+			color: #bb261a;
 		}
 
 		#text {
@@ -99,7 +98,7 @@ $mobile: 1024px;
 	}
 
 	.project {
-		background-color: #313131;
+		background-color: #262626;
 		border-radius: 12px;
 		margin-bottom: 10px;
 		padding: 24px 24px 20px 24px;
@@ -126,7 +125,6 @@ $mobile: 1024px;
 			font-weight: 400;
 		}
 
-
 		ul {
 			display: flex;
 			flex-direction: row;
@@ -152,15 +150,14 @@ $mobile: 1024px;
 			position: relative;
 			top: -2px;
 			margin-right: 10px;
-			opacity: 0.2	;
+			opacity: 0.2;
 		}
-
 	}
 }
 
 .about {
 	.links {
-		margin-top: 30px
+		margin-top: 30px;
 	}
 
 	a {
@@ -170,10 +167,9 @@ $mobile: 1024px;
 		padding-right: 10px;
 		color: #8f8f8f;
 		&:hover {
-		  color: #BB261A;
+			color: #bb261a;
 		}
 	}
-
 }
 
 .projects-section {
